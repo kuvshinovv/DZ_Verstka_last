@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
 <header>
+    <div class="containerfon">
         <div class="container">
             <nav class="navigation">
                 <div class="nav1">
@@ -19,36 +21,44 @@
                 <div class="nav2">
                     <a href="№"><img src="./img/headerPict3.png" alt="Свойства"></a>
                     <a href="№"><img src="./img/headerPict4.png" alt="Личный кабинет"></a>
-                    <a href="№"><img src="./img/headerPict5.png" alt="Карзина"></a>
+                    <div class="nav2cart">
+                        <a href="№"><img class="nav2cart_img" src="./img/headerPict5.png" alt="Карзина"></a>
+                        <img class="nav2cart_circle" src="./img/Circle.png" alt="Circle">
+                        <p class="nav2cart_number">5</p>
+                    </div>
+                    
+
                 </div>
             </nav>
         </div>
+    </div>
+        
 </header>
 
 <main>
-    <div class="container">
+    <div class="container2">
         <div class="maincontent">
             <div class="box1">
-                <div class="box1bigpict">
-                    <img src="./img/box1bigpict.png" alt="">
-                </div>
-                <div class="box1tile">
-                    <div class="bordertitle">
-
+                <div class="box1content">
+                    <div class="box1bigpict">
+                        <img src="./img/box1bigpict.png" alt="">
                     </div>
-                    <div class="maintitle">
-                        <h1 class="maintitle_h1">THE BRAND</h1>
-                        <div class="maintitle_h2">
-                            <h2 class="maintitle_h2_1">OF LUXERIOUS </h2>
-                            <h2 class="maintitle_h2_2">FASHION </h2>
+                    <div class="box1tile">
+                        <div class="bordertitle">
                         </div>
-                        
+                        <div class="maintitle">
+                            <h1 class="maintitle_h1">THE BRAND</h1>
+                            <div class="maintitle_h2">
+                                <h2 class="maintitle_h2_1">OF LUXERIOUS </h2>
+                                <h2 class="maintitle_h2_2">FASHION </h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box2">
-
-                
+            
+            <div class="containerbox2box3">
+                <div class="box2">
                     <div class="box2card1">
                         <a href="#">
                             <img class="fon_gr" src="./img/fon_gr.png" alt="">
@@ -56,9 +66,7 @@
                             <span class="box2pict1span2">FOR WOMEN</span>
                         </a>
                     </div>
-                
-                
-                
+             
                     <div class="box2card2">
                         <a href="#">
                             <img class="fon_gr" src="./img/fon_gr.png" alt="">
@@ -66,8 +74,6 @@
                             <span class="box2pict2span2">FOR MEN</span>
                         </a>
                     </div>
-                
-
                 
                     <div class="box2card3">
                         <a href="#">
@@ -77,105 +83,88 @@
                         </a>
                     </div>
                 
-                
-                
                     <div class="box2card4">
                         <a href="">
                             <img class="fon_gr" src="./img/fon_gr4.png" alt="">
                             <span class="box2pict4span1">LUXIROUS & TRENDY</span>
                             <span class="box2pict4span2">ACCESORIES</span>
+                        </a> 
+                    </div>
+                
+                </div>
+                <div class="box3">
+                    <p class="box3Zagolovok1"> Future Items</p>
+                    <p class="box3Zagolovok2">Shop for items based on what we featured in this week</p>
+                    <div class="box3grid">
+                        <a href="#">
+                            <div class="box3gridcard">
+                                <img class="box3img" src="./img/Box3img1.jpg" alt="">
+                                <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
+                                <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="box3gridprice">$52.00</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box3gridcard">
+                                <div class="box3img2">
+                                    <img class="box3img2_img" src="./img/Box3img2.png" alt="">
+                                    <img class="box3img2_fon" src="./img/fon_gr.png" alt="">
+                                    <div class="box3img2_addtocart">
+                                        <img class="addtocadt_img" src="./img/Cart.png" alt="Значек карзины">
+                                        <p class="addtocadt_text">Add to Cart</p>
+                                    </div>
+                                </div>
+                                
+                                <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
+                                <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="box3gridprice">$52.00</p>
+                            </div>
+                        </a>
+                    
+                        <a href="#">
+                            <div class="box3gridcard">
+                                <img class="box3img" src="./img/Box3img3.png" alt="">
+                                <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
+                                <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="box3gridprice">$52.00</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box3gridcard">
+                                <img class="box3img" src="./img/Box3img4.png" alt="">
+                                <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
+                                <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="box3gridprice">$52.00</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box3gridcard">
+                                <img class="box3img" src="./img/Box3img5.png" alt="">
+                                <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
+                                <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="box3gridprice">$52.00</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="box3gridcard">
+                                <img class="box3img" src="./img/Box3img6.png" alt="">
+                                <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
+                                <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="box3gridprice">$52.00</p>
+                            </div>
                         </a>
                         
                     </div>
-                
-                    
-                
-                
-            </div>
-            <div class="box3">
-                <p class="box3Zagolovok1"> Future Items</p>
-                <p class="box3Zagolovok2">Shop for items based on what we featured in this week</p>
-                <div class="box3grid">
-                    <a href="#">
-                        <div class="box3gridcard">
-                            <img class="box3img" src="./img/Box3img1.jpg" alt="">
-                            <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
-                            <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="box3gridprice">$52.00</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box3gridcard">
-                            <div class="box3img2">
-                                <img  src="./img/Box3img2.png" alt="">
-                            </div>
-                            
-                            <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
-                            <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="box3gridprice">$52.00</p>
-                        </div>
-                    </a>
-                   
-                    <a href="#">
-                        <div class="box3gridcard">
-                            <img class="box3img" src="./img/Box3img3.png" alt="">
-                            <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
-                            <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="box3gridprice">$52.00</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box3gridcard">
-                            <img class="box3img" src="./img/Box3img4.png" alt="">
-                            <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
-                            <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="box3gridprice">$52.00</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box3gridcard">
-                            <img class="box3img" src="./img/Box3img5.png" alt="">
-                            <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
-                            <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="box3gridprice">$52.00</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box3gridcard">
-                            <img class="box3img" src="./img/Box3img6.png" alt="">
-                            <p class="box3gridtitle">ELLERY X M'O CAPSULE</p>
-                            <p class="box3griddescription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="box3gridprice">$52.00</p>
-                        </div>
-                    </a>
-                    
+                    <button class="footerbutton">
+                        <p class="footerbuttontext">Browse All Product</p>
+                    </button>
                 </div>
-                <button class="footerbutton">
-                    <p class="footerbuttontext">Browse All Product</p>
-                </button>
             </div>
-            
-            
         </div>
-       
     </div>         
 </main>
 
 
-
-
-
-
-
-    
 </body>
 </html>
 
-<!-- 
-возникло несколько вопросов...!!!
-
-1.  На макете указан общий фон самой страницы, цветом вот таким  
-    background: #E5E5E5; а отображается по факту белым в макете..  когда применяешь его у себя, то цвет получается сильно серым... какаято путаница..  не понял вобщем с этим цветом. 
-2.  Я использовал гриды ...  и при сильном увеличении сайта в браузере 
-    они странно плющатся...  не полющатся только те гриды, где в нутри использовал flex`ы...  не возникнит ли потом путаница при адаптации к другим размерам???  или я что то не правильно сделал ?   
--->
