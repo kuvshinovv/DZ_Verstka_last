@@ -306,12 +306,19 @@ img {
     width: 1140px;
     height: 180px;
     position: relative;
-    display: inline-block;
+    display: inline;
     background-image:url(./img/Box2Pict4.png) ;
     
     grid-column: span 3;
 }
 
+.fon_gr_4{
+    display: inline;
+    position: absolute;
+    top: 0%;
+    bottom: 60%;
+
+}
 .box2card4 .box2pict4span1 {
     width: 200px;
     height: 25px;
@@ -356,6 +363,7 @@ img {
     flex-direction: column;
     align-items: center;
     max-width: 1140px;
+    
    
 
 }
@@ -387,6 +395,7 @@ img {
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin-bottom: 49px;
+    
 }
 .box3gridcard{
     background: #F8F8F8;
@@ -396,6 +405,7 @@ img {
     width: 360px;
     height: 420px;
     margin-bottom: 25px;
+    
 }
 
 .box3img2{
@@ -451,7 +461,8 @@ img {
     color: #F16D7F;
     margin-left: 18px;
     margin-right: 18px;
-    margin-bottom: 20px;
+    /* margin-bottom: 16px; */
+    padding-bottom: 20px;
 }
 
 .footerbutton{
@@ -474,7 +485,6 @@ img {
 
 @media(min-width: 768px) and (max-width: 1024px){
     .container{
-        
         max-width: 768px;
     }
     .navigation{
@@ -578,7 +588,7 @@ img {
         width: 232px;
         height: 168px;
        
-        background-size: 100%;
+        /* background-size: 100%; */
     }
     .box2card1 .box2pict1span1 {
         right: 70%;
@@ -632,9 +642,22 @@ img {
     .box2card4{
         width: 734px;
         height: 116px;
-        background-size: 100%;
+        /* background-size: 100%; */
     }
     
+    .box2card4_img{
+        position: absolute;
+        display: inline;
+        width: 343px;
+        height: 111px;
+        /* background-size: 100%; */
+    }
+    .fon_gr_4{
+        display: inline;
+        position: absolute;
+        height: 100%;
+    }
+
     .box2card4 .box2pict4span1 {
         left: 37%;
         right: 63%;
@@ -713,4 +736,197 @@ img {
         margin-left: 11px;
     }
     
+}
+
+@media(min-width: 375px) and (max-width: 768px) {
+    .container{
+        max-width: 375px;
+    }
+    .nav2cart{
+        display: none;
+    }
+
+    .nav2pict4{
+        display: none;
+    }
+
+    .maincontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1{
+        width: 100%;
+        height: 363px;
+    }
+
+    .box1content{
+        grid-template-columns: 1fr;
+        width: 375px;
+        height: 363px;
+    }
+    .box1tile{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1bigpict{
+        display: none;
+    }
+    .bordertitle{
+        margin-top: 10px;
+        width: 12px;
+        height: 61px;
+    }
+    .maintitle{
+       width: 250px;
+       height: 66px;
+    }
+
+
+    .maintitle_h1{
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .maintitle_h2_1{
+      
+        font-size: 20px;
+        line-height: 24px;
+        
+    }
+    .maintitle_h2_2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    
+    .containerbox2box3 {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        display: grid;
+
+        
+    }
+    .box3{
+        display: grid; 
+        max-width: 375px;
+        justify-items: center;
+    }
+    .box3grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 16px;
+        /* margin-bottom: 49px; */
+    }
+
+    .box3img {
+        
+        width: 359px;
+        height: 418px;
+        margin-bottom: 25px;
+        
+    }
+    .box3gridcard {
+        background: #F8F8F8;
+        width: 359px;
+    }
+    
+
+    .box2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        height:fit-content ;
+        gap: 32px;
+        /* margin-bottom: 64px; */
+        width: 375px;
+        justify-items: center;
+        margin-bottom: -50px;
+    }
+    .box2card1 {
+        
+        width: 343px;
+        height: 248px;
+        
+    }
+    .box2card1 .box2pict1span1 {
+        left: 36%;
+        /* right: 80%; */
+        top: 43%;
+        /* bottom: 70%; */
+    }
+    
+    .box2card1 .box2pict1span2 {
+        left: 22%;
+        /* right: 80%; */
+        top: 54%;
+        /* bottom: 46%; */
+    }
+    .box2card2 {
+        
+        width: 343px;
+        height: 248px;
+        
+    }
+    .box2card2 .box2pict2span1 {
+        left: 36%;
+        /* right: 80%; */
+        top: 43%;
+        /* bottom: 70%; */
+    }
+    
+    .box2card2 .box2pict2span2 {
+        left: 22%;
+        /* right: 80%; */
+        top: 54%;
+        /* bottom: 46%; */
+    }
+    .box2card3 {
+        
+        width: 343px;
+        height: 248px;
+        
+    }
+    .box2card3 .box2pict3span1 {
+        left: 29%;
+        /* right: 80%; */
+        top: 43%;
+        /* bottom: 70%; */
+    }
+    
+    .box2card3 .box2pict3span2 {
+        left: 22%;
+        /* right: 80%; */
+        top: 54%;
+        /* bottom: 46%; */
+    }
+
+    .box2card4 {
+        width: 343px;
+        height: 111px;
+        
+        background-image: none;
+        grid-column: 1;
+    }
+    .box2card4 .box2pict4span1 {
+        left: 21%;
+        /* right: 80%; */
+        top: 30%;
+        /* bottom: 70%; */
+    }
+    
+    .box2card4 .box2pict4span2 {
+        left: 21%;
+        /* right: 80%; */
+        top: 54%;
+        /* bottom: 46%; */
+    }
+    .fon_gr{
+        width: 100%;
+        height: 100%;
+    }
 }
