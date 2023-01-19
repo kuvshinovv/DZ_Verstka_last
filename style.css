@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=Open+Sans:wght@600;800&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400;1,900&family=Open+Sans:wght@600;800&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -16,9 +22,6 @@ img {
 	max-width: 100%;
 }
 
- @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=Open+Sans:wght@600;800&display=swap'); 
-
- @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400;1,900&family=Open+Sans:wght@600;800&display=swap');
 
 
 
@@ -710,6 +713,12 @@ color: #F16D7F;
     border: 1px solid #FF6A6A;
     background: #ffffff;
     margin-bottom: 95px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+    color: #F16D7F;
 }
 .footerbutton:hover{
     width: 211px;
@@ -717,26 +726,16 @@ color: #F16D7F;
     background: #F16D7F;
     border: 1px solid #FF6A6A;
     margin-bottom: 95px;
-   
-    
-}
-
-.footerbuttontext{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 45px;
-    color: #F26376;
-}
-.footerbuttontext:hover{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 45px;
     color: #FFFFFF;
+   
+    
 }
+
 
 
 
@@ -829,7 +828,7 @@ color: #F16D7F;
 }
 .footerblock_2_flex{
     display: flex;
-    width: 1140;
+    width: 1140px;
     justify-content: center;
     align-items: center;
 }
@@ -879,15 +878,13 @@ color: #222224;
     border: none;
     width: 256px;
     height: 49px;
-    box-sizing: none;
+    /* box-sizing: none; */
     text-decoration: none;
     padding-left: 30px;
 } 
 
 .footerbuttonSubscribe{
     border: none;  
-}
-.footerbuttonSubscribetext{
     background-image: url("./img/button_subscribe.svg");
     width: 100px;
     height: 49px;
@@ -947,14 +944,25 @@ color: #222224;
     align-items: center;
     justify-content: center;
 }
-.footerblock_3_cadr_2_socials:hover{
+ .footerblock_3_cadr_2_socials:hover{
     display: flex;
     width: 32px;
     height: 32px;
-    background: #F16D7F;
+    fill: white;
     align-items: center;
     justify-content: center;
+    background: #F16D7F;
 }
+
+.footerblock_3_cadr_2_socials:hover  .img_socials{
+    fill: white;
+}
+
+.img_socials{
+    fill: black;
+}
+
+
 
 
 
@@ -1443,22 +1451,33 @@ color: #222224;
         height: 100%;
         
     }
+    .container_footer{
+        display: flex;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    }
     .footerblock_1{
         padding-top: 50px;
     padding-bottom: 50px;
-    width: 100%;
+    width: 375px;
     }
     .footerblock_1_cards{
         justify-content: center;
         flex-wrap: wrap;
        padding-left: 100px;
        padding-right: 100px;
+       width: 375px;
     }
     .footerblock_2{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
+        width: 375px;
         /* padding-left: 350px;
         padding-right: 350px; */
         
@@ -1468,16 +1487,22 @@ color: #222224;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 375px;
     }
     .footerblock_2_cards{
-        width: 100%;
+        width: 375px;
+    }
+    .footerblock_2_card_2{
+        width: 375px;
     }
     .footerblock_3{
         height: 143px;
+        width: 375px;
 
     }
     .footerblock_3_cadrs{
         flex-direction: column-reverse;
+        width: 375px;
 
     }
     .footerblock_3_cadr_1{
